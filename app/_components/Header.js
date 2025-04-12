@@ -8,7 +8,6 @@ import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-  const { theme, toggleTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
 
   const links = [
@@ -105,26 +104,11 @@ export default function Header() {
               </motion.a>
             ))}
 
-            <button
-              onClick={toggleTheme}
-              className="p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-700"
-              aria-label={`Toggle ${theme === "dark" ? "light" : "dark"} mode`}
-            >
-              {theme === "dark" ? <FiSun /> : <FiMoon />}
-            </button>
           </div>
         </nav>
 
         {/* Mobile Menu Toggle */}
         <div className="md:hidden flex items-center gap-4">
-          <button
-            onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-            className="text-slate-600 dark:text-slate-400 hover:text-sky-500 dark:hover:text-sky-400 transition-colors p-2"
-            aria-label="Toggle dark mode"
-          >
-            {theme === "dark" ? <FiSun /> : <FiMoon />}
-          </button>
-
           <button
             className="text-sky-500 text-2xl p-2"
             onClick={() => setIsMenuOpen(!isMenuOpen)}

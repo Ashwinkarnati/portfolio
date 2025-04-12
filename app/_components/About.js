@@ -72,8 +72,8 @@ export default function About() {
                   icon: "📚"
                 },
                 { 
-                  title: "GPA: 9.36", 
-                  desc: "B.Tech in Computer Science & Engineering at JNTUH",
+                  title: "GPA: 9.34", 
+                  desc: "B.Tech in Computer Science & Engineering at JNTUHUCESTH Hyderabad",
                   icon: "🎓"
                 },
               ].map((achievement, idx) => (

@@ -7,7 +7,7 @@ import Contact from './_components/Contact';
 import Footer from './_components/Footer';
 
 export const metadata = {
-  title: 'Karnati Ashwin | Home',
+  title: 'Karnati Ashwin',
   description: 'Explore the portfolio of Karnati Ashwin, a Full Stack Developer & AI Enthusiast.',
 };
 
@@ -32,9 +32,6 @@ export default function Home() {
       <section id="contact" className="w-full my-16">
         <Contact />
       </section>
-      <footer className="w-full mt-16">
-        <Footer />
-      </footer>
     </main>
   );
 }

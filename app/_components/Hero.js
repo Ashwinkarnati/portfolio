@@ -65,7 +65,7 @@ export default function Hero() {
               />
 
               <p className="text-lg text-slate-600 dark:text-slate-300 mb-8 max-w-lg mx-auto lg:mx-0 leading-relaxed">
-                Passionate about building innovative web solutions and exploring the realms of AI and Machine Learning. Currently pursuing my B.Tech in Computer Science with a focus on cutting-edge technologies.
+                Passionate about building innovative web solutions and exploring the realms of AI and Machine Learning. Currently pursuing my B.Tech in Computer Science in JNTUHUCESTH with a focus on cutting-edge technologies.
               </p>
 
               <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
@@ -98,7 +98,7 @@ export default function Hero() {
                   download
                   className="px-6 py-3 bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-200 rounded-lg font-medium hover:bg-slate-200 dark:hover:bg-slate-600 transition-colors flex items-center gap-2"
                 >
-                  Download CV
+                  Resume
                   <FiDownload className="text-lg" />
                 </motion.a>
               </div>
@@ -119,7 +119,7 @@ export default function Hero() {
               {/* Profile image container */}
               <div className="relative w-full h-full bg-white dark:bg-slate-700 rounded-full overflow-hidden border-4 border-sky-100 dark:border-sky-900/50 shadow-2xl">
                 <img
-                  src="/profile.jpg" // Replace with your profile image
+                  src="/profile.png" // Replace with your profile image
                   alt="Karnati Ashwin"
                   className="w-full h-full object-cover"
                 />
@@ -138,7 +138,7 @@ export default function Hero() {
 
             {/* Social Links */}
             <motion.div
-              className="flex gap-4 mt-12"
+              className="flex gap-4 mt-6"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.8 }}

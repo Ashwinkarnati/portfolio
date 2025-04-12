@@ -7,27 +7,26 @@ import { FaGraduationCap } from 'react-icons/fa'
 const educationData = [
   {
     degree: 'B.Tech in Computer Science & Engineering',
-    institution: 'JNTUH College of Engineering, Hyderabad',
+    institution: 'JNTUH University College of Engineering,Science and Technology Hyderabad',
     year: '2022 - 2026',
-    description: 'Specializing in Artificial Intelligence and Machine Learning with current GPA of 9.36',
+    description: 'CGPA of 9.34 (as of now)',
     icon: <FaGraduationCap className="w-5 h-5 text-sky-500" />,
     highlights: [
       'Recipient of Academic Excellence Scholarship',
-      'Coursework in Data Structures, Algorithms, and ML',
+      'Coursework in Data Structures, Algorithms, Computer Fundamentals and ML',
       'Active participant in coding competitions'
     ]
   },
   // Add more entries here if needed
   {
     degree: 'Intermediate Education (MPC)',
-    institution: 'Narayana Junior College, Hyderabad',
+    institution: 'Sri Chaitanya Junior Kalasala, Hyderabad',
     year: '2020 - 2022',
-    description: 'Scored 97.6% in Board Examinations',
+    description: 'Scored 98.7% in Board Examinations',
     icon: <FiBook className="w-5 h-5 text-sky-500" />,
     highlights: [
-      'State Rank in Mathematics',
-      'Topper in Physics and Chemistry',
-      'Represented college in science exhibitions'
+      'State Rank (794) in EAMCET 2022',
+      'Good at Mathematics'
     ]
   }
 ]
@@ -109,20 +108,6 @@ export default function Education() {
           {educationData.map((item, index) => (
             <EducationCard key={index} {...item} />
           ))}
-        </div>
-
-        {/* Add timeline connector for visual flow */}
-        <div className="hidden md:block">
-          <div className="relative">
-            <div className="absolute left-1/2 top-0 bottom-0 w-0.5 bg-slate-200 dark:bg-slate-700 -translate-x-1/2"></div>
-            {educationData.map((_, index) => (
-              <div 
-                key={index} 
-                className="absolute left-1/2 w-4 h-4 rounded-full bg-sky-500 border-4 border-white dark:border-slate-800 -translate-x-1/2"
-                style={{ top: `${(index * 50) + 25}%` }}
-              ></div>
-            ))}
-          </div>
         </div>
       </div>
     </section>

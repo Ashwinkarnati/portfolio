@@ -2,8 +2,10 @@
 import { motion } from 'framer-motion';
 import AnimatedText from './AnimatedText';
 import { FaPython, FaJs, FaReact, FaNodeJs, FaJava, FaHtml5 } from 'react-icons/fa';
-import { SiNextdotjs, SiTensorflow, SiPandas, SiMongodb, SiPostgresql } from 'react-icons/si';
+import { SiNextdotjs, SiTensorflow, SiPandas, SiMongodb, SiPostgresql, SiMysql, SiC, SiConvex } from 'react-icons/si';
 import { DiCss3 } from 'react-icons/di';
+import { TbBrandCpp } from 'react-icons/tb';
+import { GiArtificialIntelligence } from 'react-icons/gi';
 
 const skillCategories = [
   {
@@ -11,31 +13,33 @@ const skillCategories = [
     skills: [
       { name: 'Python', level: 90, icon: <FaPython className="text-3xl text-blue-500" /> },
       { name: 'JavaScript', level: 85, icon: <FaJs className="text-3xl text-yellow-500" /> },
-      { name: 'Java', level: 65, icon: <FaJava className="text-3xl text-red-500" /> },
-      { name: 'C', level: 70, icon: <span className="text-3xl font-bold text-purple-500">C</span> },
+      { name: 'Java', level: 80, icon: <FaJava className="text-3xl text-red-500" /> },
+      { name: 'C', level: 75, icon: <SiC className="text-3xl text-purple-500" /> },
     ],
   },
   {
     title: 'Web Development',
     skills: [
       { name: 'React.js', level: 80, icon: <FaReact className="text-3xl text-blue-400" /> },
-      { name: 'Next.js', level: 75, icon: <SiNextdotjs className="text-3xl text-black dark:text-white" /> },
-      { name: 'Node.js', level: 70, icon: <FaNodeJs className="text-3xl text-green-500" /> },
-      { name: 'HTML5', level: 90, icon: <FaHtml5 className="text-3xl text-orange-500" /> },
+      { name: 'Next.js', level: 90, icon: <SiNextdotjs className="text-3xl text-black dark:text-white" /> },
+      { name: 'Node.js', level: 80, icon: <FaNodeJs className="text-3xl text-green-500" /> },
+      { name: 'HTML5', level: 95, icon: <FaHtml5 className="text-3xl text-orange-500" /> },
       { name: 'CSS3', level: 85, icon: <DiCss3 className="text-3xl text-blue-600" /> },
     ],
   },
   {
-    title: 'Data Science & AI',
+    title: 'ML & AI',
     skills: [
-      { name: 'Machine Learning', level: 75, icon: <SiTensorflow className="text-3xl text-orange-500" /> },
-      { name: 'Data Science', level: 70, icon: <SiPandas className="text-3xl text-blue-600" /> },
+      { name: 'Machine Learning', level: 70, icon: <SiTensorflow className="text-3xl text-orange-500" /> },
+      { name: 'AI', level: 70, icon: <GiArtificialIntelligence className="text-3xl text-blue-400" /> },
     ],
   },
   {
     title: 'Databases',
     skills: [
-      { name: 'SQL', level: 80, icon: <SiPostgresql className="text-3xl text-blue-700" /> },
+      { name: 'SQL', level: 80, icon: <span className="text-3xl font-bold text-orange-600">SQL</span>},
+      { name: 'MySQL', level: 80, icon: <SiMysql className="text-3xl text-blue-500" /> },
+      { name: 'Convex', level: 80, icon: <span className="text-3xl font-bold text-green-600">CVX</span> },
       { name: 'MongoDB', level: 70, icon: <SiMongodb className="text-3xl text-green-600" /> },
     ],
   },
