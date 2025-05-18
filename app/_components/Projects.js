@@ -1,73 +1,95 @@
-'use client';
-import { motion } from 'framer-motion';
-import AnimatedText from './AnimatedText';
-import { FiExternalLink, FiGithub } from 'react-icons/fi';
+"use client";
+import { motion } from "framer-motion";
+import AnimatedText from "./AnimatedText";
+import { FiExternalLink, FiGithub } from "react-icons/fi";
 
 const projects = [
   {
-    title: 'AIPDFNoteTaker',
-    description: " Developed a web app to upload PDFs, extract text, and generate AI-powered notes and summaries with search functionality",
-    technologies: ['Next.js', 'Google Generative AI', 'Convex', 'Tailwind CSS'],
-    category: 'Web Development',
-    github: 'https://github.com/Ashwinkarnati/AI-PDF-NOTE-TAKER',
-    demo: 'https://ai-pdf-note-taker-omega.vercel.app/',
+    title: "AIPDFNoteTaker",
+    description:
+      " Developed a web app to upload PDFs, extract text, and generate AI-powered notes and summaries with search functionality",
+    technologies: ["Next.js", "Google Generative AI", "Convex", "Tailwind CSS"],
+    category: "Web Development",
+    github: "https://github.com/Ashwinkarnati/AI-PDF-NOTE-TAKER",
+    demo: "https://ai-pdf-note-taker-omega.vercel.app/",
   },
   {
-    title: 'PromptGenius',
-    description: ' Built a web app for generating advanced image prompts using a multi-step form, with AI-powered customization, user management, and responsive design.',
-    technologies: ['Next.js, Google Generative AI, Convex'],
-    category: 'Web Development',
-    github: 'https://github.com/Ashwinkarnati/AI-Image-Prompt-Generator',
-    demo: 'https://ai-image-prompt-generator-fwd4.vercel.app/',
+    title: "MPad",
+    description:
+      "Developed an AI-powered math assistant web app to solve handwritten, typed, or uploaded mathematical problems, providing LaTeX-formatted solutions with an intuitive interface.",
+    technologies: [
+      "Next.js",
+      "Google Generative AI (Gemini 2.0)",
+      "Mantine.js",
+      "Tabler Icons",
+      "Node.js",
+    ],
+    category: "Web Development",
+    github: "https://github.com/Ashwinkarnati/MPad",
+    demo: "https://mpad-opal.vercel.app/",
   },
   {
-    "title": "Wuzzle",
-    "description": "A Wordle-inspired game where players guess a hidden 5-letter technical word with real-time stats and user authentication.",
-    "technologies": ["Next.js", "Clerk", "Convex", "Tailwind CSS", "shadcn/ui", "Framer Motion"],
-    "category": "Web Development",
-    "github": "https://github.com/BrainBlast2025/wuzzle",
-    "demo": "https://wuzzle-mocha.vercel.app/"
-  }
-,  
-  {
-    title: 'Diabetes Predictor',
-    description: 'Machine learning model that predicts diabetes risk with 89% accuracy using patient health metrics.',
-    technologies: ['Python', 'Scikit-learn', 'Pandas', 'NumPy', 'Matplotlib'],
-    category: 'Machine Learning',
-    github: 'https://github.com/Ashwinkarnati/diabetes_predictor',
+    title: "PromptGenius",
+    description:
+      " Built a web app for generating advanced image prompts using a multi-step form, with AI-powered customization, user management, and responsive design.",
+    technologies: ["Next.js, Google Generative AI, Convex"],
+    category: "Web Development",
+    github: "https://github.com/Ashwinkarnati/AI-Image-Prompt-Generator",
+    demo: "https://ai-image-prompt-generator-fwd4.vercel.app/",
   },
   {
-    title: 'To-Do List App',
-    description: 'Full-featured task management application',
-    technologies: ['React.js'],
-    category: 'Web Development',
-    github: 'https://github.com/Ashwinkarnati/todolist',
-    demo: 'https://todolist-rho-ashy.vercel.app/',
+    title: "Wuzzle",
+    description:
+      "A Wordle-inspired game where players guess a hidden 5-letter technical word with real-time stats and user authentication.",
+    technologies: [
+      "Next.js",
+      "Clerk",
+      "Convex",
+      "Tailwind CSS",
+      "shadcn/ui",
+      "Framer Motion",
+    ],
+    category: "Web Development",
+    github: "https://github.com/BrainBlast2025/wuzzle",
+    demo: "https://wuzzle-mocha.vercel.app/",
   },
   {
-    title: 'Password Manager',
-    description: 'Secure password storage with AES-256 encryption, biometric auth, and cross-device sync.',
-    technologies: ['React', 'MongoDB', 'Node.js', 'Express'],
-    category: 'Web Development',
-    github: 'https://github.com/Ashwinkarnati/passwordmanager',
+    title: "Diabetes Predictor",
+    description:
+      "Machine learning model that predicts diabetes risk with 89% accuracy using patient health metrics.",
+    technologies: ["Python", "Scikit-learn", "Pandas", "NumPy", "Matplotlib"],
+    category: "Machine Learning",
+    github: "https://github.com/Ashwinkarnati/diabetes_predictor",
+  },
+  {
+    title: "To-Do List App",
+    description: "Full-featured task management application",
+    technologies: ["React.js"],
+    category: "Web Development",
+    github: "https://github.com/Ashwinkarnati/todolist",
+    demo: "https://todolist-rho-ashy.vercel.app/",
   },
 ];
 
 export default function Projects() {
   return (
-    <section id="projects" className="section bg-gradient-to-b from-sky-50/50 to-white dark:from-slate-900 dark:to-slate-800 py-20">
+    <section
+      id="projects"
+      className="section bg-gradient-to-b from-sky-50/50 to-white dark:from-slate-900 dark:to-slate-800 py-20"
+    >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
         <div className="text-center mb-16">
-          <AnimatedText 
-            text="My Projects" 
-            className="heading text-4xl md:text-5xl font-extrabold text-slate-800 dark:text-slate-100 mb-2" 
+          <AnimatedText
+            text="My Projects"
+            className="heading text-4xl md:text-5xl font-extrabold text-slate-800 dark:text-slate-100 mb-2"
           />
           <div className="w-24 h-1.5 bg-sky-500 mx-auto rounded-full"></div>
           <p className="mt-6 text-lg text-slate-600 dark:text-slate-300 max-w-2xl mx-auto">
-            Here are some of my featured projects. Each one was built to solve real problems with modern technologies.
+            Here are some of my featured projects. Each one was built to solve
+            real problems with modern technologies.
           </p>
         </div>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <motion.div
@@ -88,7 +110,7 @@ export default function Projects() {
                   </span>
                 </div>
               </div>
-              
+
               <div className="p-6">
                 <div className="flex justify-between items-start mb-3">
                   <h3 className="text-xl font-bold text-slate-800 dark:text-slate-100 group-hover:text-sky-500 dark:group-hover:text-sky-400 transition-colors">
@@ -98,11 +120,11 @@ export default function Projects() {
                     {project.category}
                   </span>
                 </div>
-                
+
                 <p className="text-slate-600 dark:text-slate-300 mb-5 leading-relaxed">
                   {project.description}
                 </p>
-                
+
                 <div className="flex flex-wrap gap-2 mb-6">
                   {project.technologies.map((tech, i) => (
                     <motion.span
