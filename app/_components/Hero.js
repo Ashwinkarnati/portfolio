@@ -94,7 +94,7 @@ export default function Hero() {
                 <motion.a
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  href="/resume.pdf" // Replace with actual resume path
+                  href="/KarnatiAshwin.pdf" // Replace with actual resume path
                   download
                   className="px-6 py-3 bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-200 rounded-lg font-medium hover:bg-slate-200 dark:hover:bg-slate-600 transition-colors flex items-center gap-2"
                 >
